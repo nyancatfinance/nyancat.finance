@@ -175,9 +175,6 @@ async function connectWeb3() {
             ethaddress = conn[0];
         }
         updateConnectStatus();
-        getOldTokenBalance();
-        checkSwap();
-
         return true;
     }
 }
