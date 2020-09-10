@@ -52,7 +52,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = result3 / result2;
                 pools[0][4] = (((perpoolunit / (result1['_reserve0'] * 2 / Math.pow(10, 18))) * 100 * pools[0][3]) / percentageOfSupplyInPool);
                 pools[0][5] = (result1['_reserve0'] * 2 / Math.pow(10, 18) * percentageOfSupplyInPool);
-                $('.pool0yield').animateNumbers(parseInt(pools[0][4]) + '%');
+                //$('.pool0yield').animateNumbers(parseInt(pools[0][4]) + '%');
                 loadedPool();
             });
         });
@@ -67,7 +67,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = result3 / result2;;
                 pools[1][4] = (((perpoolunit / (result1['_reserve0'] * 2 / Math.pow(10, 18))) * 100 * pools[1][3]) / percentageOfSupplyInPool);
                 pools[1][5] = (result1['_reserve0'] * 2 / Math.pow(10, 18) * percentageOfSupplyInPool);
-                $('.pool1yield').animateNumbers(parseInt(pools[1][4]) + '%');
+                //$('.pool1yield').animateNumbers(parseInt(pools[1][4]) + '%');
                 loadedPool();
             });
         });
@@ -82,7 +82,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = result3 / result2;
                 pools[2][4] = (((perpoolunit * prices["nyancateth"]) / ((result1["_reserve1"] * 2) / Math.pow(10, 18))) * 100 * pools[2][3]) / percentageOfSupplyInPool;
                 pools[2][5] = ((prices["ethusdt"] * result1["_reserve1"] * 2) / Math.pow(10, 18)) * percentageOfSupplyInPool;
-                $('.pool2yield').animateNumbers(parseInt(pools[2][4]) + '%');
+                //$('.pool2yield').animateNumbers(parseInt(pools[2][4]) + '%');
                 loadedPool();
             });
         });
@@ -97,7 +97,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = stakedSupply / totalSupply;
                 pools[3][4] = (((perpoolunit * prices['nyancateth'] / (result1['_reserve0'] * 2 / Math.pow(10, 18))) * 100 * pools[3][3]) / percentageOfSupplyInPool);
                 pools[3][5] = (prices['ethusdt'] * result1["_reserve0"] * 2 / Math.pow(10, 18) * percentageOfSupplyInPool);
-                $('.pool3yield').animateNumbers(parseInt(pools[3][4]) + '%');
+                //$('.pool3yield').animateNumbers(parseInt(pools[3][4]) + '%');
                 loadedPool()
             });
         });
@@ -112,7 +112,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = stakedSupply / totalSupply;
                 pools[4][4] = (((perpoolunit * prices['nyancatusdt'] / (result1['_reserve0'] * 2 / Math.pow(10, 6))) * 100 * pools[4][3]) / percentageOfSupplyInPool);
                 pools[4][5] = (result1['_reserve0'] * 2 / Math.pow(10, 6) * percentageOfSupplyInPool);
-                $('.pool4yield').animateNumbers(parseInt(pools[4][4]) + '%');
+                //$('.pool4yield').animateNumbers(parseInt(pools[4][4]) + '%');
                 loadedPool()
             });
         });
@@ -127,7 +127,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = stakedSupply / totalSupply;
                 pools[5][4] = (((perpoolunit * prices['nyancateth'] / (result1['_reserve1'] * 2 / Math.pow(10, 18))) * 100 * pools[5][3]) / percentageOfSupplyInPool);
                 pools[5][5] = (prices['ethusdt'] * result1['_reserve1'] * 2 / Math.pow(10, 18) * percentageOfSupplyInPool);
-                $('.pool5yield').animateNumbers(parseInt(pools[5][4]) + '%');
+                //$('.pool5yield').animateNumbers(parseInt(pools[5][4]) + '%');
                 loadedPool();
             });
         });
@@ -142,7 +142,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = stakedSupply / totalSupply;
                 pools[6][4] = (((perpoolunit * prices['nyancatusdt'] / (result1['_reserve0'] * 2 / Math.pow(10, 18))) * 100 * pools[6][3]) / percentageOfSupplyInPool);
                 pools[6][5] = (result1['_reserve0'] * 2 / Math.pow(10, 18) * percentageOfSupplyInPool);
-                $('.pool6yield').animateNumbers(parseInt(pools[6][4]) + '%');
+                //$('.pool6yield').animateNumbers(parseInt(pools[6][4]) + '%');
                 loadedPool()
             });
         });
@@ -157,7 +157,7 @@ function updateYield() {
                 var percentageOfSupplyInPool = stakedSupply / totalSupply;
                 pools[7][4] = (((perpoolunit * prices['nyancateth'] / (result1['_reserve1'] * 2 / Math.pow(10, 18))) * 100 * pools[7][3]) / percentageOfSupplyInPool);
                 pools[7][5] = (prices['ethusdt'] * result1['_reserve1'] * 2 / Math.pow(10, 18) * percentageOfSupplyInPool);
-                $('.pool7yield').animateNumbers(parseInt(pools[7][4]) + '%');
+                //$('.pool7yield').animateNumbers(parseInt(pools[7][4]) + '%');
                 loadedPool();
             });
         });
